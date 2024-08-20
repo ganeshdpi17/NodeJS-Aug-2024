@@ -1,0 +1,49 @@
+Softwares we need to start this training
+=========================================
+1. VisualStudio Code  (Code Editor)
+   https://code.visualstudio.com/download
+
+2. NodeJS  
+   https://nodejs.org/en/download/prebuilt-installer
+
+
+
+NodeJS
+======
+NodeJS - FrontEnd Development - platform/ runtime environemnt/ server (NodeJS software)
+NodeJS - BackEnd Development - Programming language - FS , OS , HTTP , URL , CRYPTO
+
+
+Javascript
+==========
+-Programming language
+
+Javascript For FronEnd - Javascript that runs on browser
+Javascript For BackEnd - Javascript that runs on nodejs
+
+
+How to run a Javascript file in browser
+=======================================
+1. Create a javascript file (demo_1.js) and add javascript code in that
+2. create an HTML file (demo_1.html) & include the javascript file in side that HTML file
+    <script src='./demo_1.js'>
+
+
+How to run javascript file in NodeJS
+====================================
+1. make sure nodejs software is installed in your machine
+2. Create a javascript file (demo_1.js) and add javascript code in that file
+3. run the below command in cmd 
+   node <filename>.js
+
+
+    browser                         nodejs
+======================================================================
+1. window- yes                      1. window - No
+2. document - yes                   2. document - Yes
+3. offline storage - browser        3. offline storage - no
+4. cookie - Yes                     4. cookie - no
+
+5. File System - No                 5. File System - Yes
+6. Database Interaction - No        6. Database Interaction - yes
+7. Client App / UI                  7. Server App / Backend 

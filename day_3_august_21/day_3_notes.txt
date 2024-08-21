@@ -1,0 +1,38 @@
+Javascript - Programming Laguage , follows ECMASCRIPT standards
+ECMA - European Computer Menufecturer Association
+ECMASCRIPT - Standard , is followed by Javascript
+
+
+ES-5     before 2015 
+ES-6     2015 (let , const , for-of,for-in,template string, module, class, extends)
+Es-7     2016
+Es-8     2017
+Es-9     2018
+Es-10    2019
+Es-11    2020
+Es-12    2021
+Es-13    2022
+Es-14    2023
+Es-15    2024
+
+
+
+variables
+=========
+var      <2015
+let      ECMASCRIPT-6 2015
+const    ECMASCRIPT-6 2015
+
+
+        var                          let                             const
+==================================================================================
+1. re-assignment-yes        1. re-assignment - yes          1. re-assignment - no
+2. initialization-no        2. initialization-no            2. initialization - mandatory
+3. Since the begining       3. 2015 - ES-6                  3. 2015 - ES-6
+4. can be re-declared       4. cann't be re-declared        4. cann't be re-declared
+5. global,function          5. global,function,block        5. global,function,block
+
+Note: Using 'var' , we cann't declare block scope variables, we cann't restrict the scope of a variable inside a block
+-even though a variable is declared inside a block, that ll be visible outside the block
+
+

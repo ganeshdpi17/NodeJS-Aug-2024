@@ -40,8 +40,8 @@ How to run javascript file in NodeJS
     browser                         nodejs
 ======================================================================
 1. window- yes                      1. window - No
-2. document - yes                   2. document - Yes
-3. offline storage - browser        3. offline storage - no
+2. document - yes                   2. document - No
+3. offline storage - yes            3. offline storage - no
 4. cookie - Yes                     4. cookie - no
 
 5. File System - No                 5. File System - Yes

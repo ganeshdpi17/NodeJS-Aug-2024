@@ -1,0 +1,52 @@
+Variable Scopes
+===============
+1. Global Scope - declared directly in javascript files , outside the functions 
+2. Function Scope - declared inside a function
+3. Block Scope - declared inside a Block
+
+Note: When variables are declared without var/let/const ,  they are always global variables
+
+
+use strict
+==========
+used for better coding standard & stronger error checking
+'use strict' is written either at the top of javascript file (OR) a function
+when 'use strict' is added , javascript code gets executed in strict mode
+when 'use strict' is not added , javascript code gets executed in normal mode
+normal mode ignores few mistakes
+strict mode converts the mistakes to errors
+Every ES module( .mjs (OR) package.json-type:'module' ) runs in strict mode
+
+
+In strict mode below things are checked strictly:
+1. variable declaration without var/let/const is not allowed
+2. Duplicate parameter name not allowed inside a function
+3. using delete keyword with non deleteable properties
+
+
+
+undefined  vs null
+===================
+-Both 'undefined' and 'null' are values
+-when a variable is declared without any value assigned to it, that variable by default will have 'undefined' as value.
+ex: var a;
+    let b; // undefined
+-a variable can be declared with a null value assigned by the developer
+   var user = null;
+   let emp = null;
+
+-typeof 'undefined' is undefined(datatype)
+ typeof 'null' is Object
+
+-if typeof 'null' is object, is it a primitive value or non-primitive
+-even though typeof 'null' is object, null is a primitive value
+
+-Primitive values are compared by value
+-Non-primitives are compared by address
+
+
+==      implicit type casting , equality
+===     no type casting , strict equality
+
+
+

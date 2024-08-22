@@ -1,5 +1,5 @@
 Javascript - Programming Laguage , follows ECMASCRIPT standards
-ECMA - European Computer Menufecturer Association
+ECMA - European Computer Menufacturer Association
 ECMASCRIPT - Standard , is followed by Javascript
 
 

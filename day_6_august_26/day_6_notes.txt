@@ -1,0 +1,56 @@
+Function
+========
+-function is a block of code/statements designed to perform a particular task.
+
+1. Pre-defined / inbuilt (console.log(), Math.max() , math.min(), touupercase())
+2. User Defined   ( written and used by developers)
+
+-user defined functions can be written using different syntaxes
+1. Function Declaration (named function)
+2. Function Expression  (anonymous function)
+3. IIFE (self  invoked)
+4. Arrow Function 
+
+
+declartion vs Expression
+========================
+1. Function declarations are named functions, function  expressions are anonymous
+2. function declarations are hoisted, but function expressions are not hoisted.
+
+
+Immediately Invoked Function Expression
+=======================================
+-when a function is written and invoked immediately.
+-when we want to execute a function only 1
+-we used declare block scoped variables when let/const were not there
+
+
+Arrow Function
+==============
+-is a compact alternative to function expression.
+-it has implicit 'return'
+-if the function body is 1 liner, no need to write { } 
+
+
+
+Arrow Function Limitations
+==========================
+-Arrow functions shouldn't be used as methods inside object literals.
+-when 'this' is expected to be dynamic, arrow functions shouldn't be used
+-'arguments' keyword cann't be used inside arrow function
+-arrow functions cann't be used as constructors
+
+
+
+Arrow Function Benefits
+=======================
+-arrow function doesn't have its own 'this' binding, it uses 'this' from the (lexical scope/the place where arrow function ise declared)
+-'this' value is static , it doesn't check from where the function is invoked
+  it checks where the function is written
+-when arrow functions are used as callbacks, they dont loose 'this' context
+
+
+
+Normal Function : 'this' is decided how / where the function is being called 
+Arrow Function : 'this' is not decided how / where the function is being called
+                  where the arrow function is written

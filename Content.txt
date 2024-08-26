@@ -34,7 +34,7 @@ Node.js Syllabus
 -Swagger  (API Documentation)
 -Unit testing (Mocha, Jasmine)
 -JWT
-
+-CRON JOB
 
 
 
@@ -52,3 +52,4 @@ Projects
 -Swagger
 -Unit testing
 -JWT Token
+-phonepe payment integration

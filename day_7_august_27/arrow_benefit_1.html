@@ -1,0 +1,19 @@
+<script>
+    class Student {
+        fName = 'sachin';
+        lName = 'tendulkar';
+
+        fullname1() { // fullName1() , this = dynamic (Student Object / Window)
+            console.log(this.fName, this.lName, this);
+        }
+        fullname2 = () => { // fullName2() , this = Static (Student Object)
+            console.log(this.fName, this.lName)
+        }
+    }
+    let std = new Student();
+    // std.fullname1(); // this = Student Object
+    // std.fullname2(); // this = Student Object
+
+    setTimeout(std.fullname1, 2000); // inside fullName1 , this = window
+    setTimeout(std.fullname2, 2000); // inside fullName2 , this = Student
+</script>

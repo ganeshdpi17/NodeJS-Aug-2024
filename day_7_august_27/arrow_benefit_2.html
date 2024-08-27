@@ -1,0 +1,28 @@
+<script>
+    class Student {
+        fName = 'sachin';
+        lName = 'tendulkar';
+
+        fullname1() {
+            console.log(this.fName, this.lName);
+        }
+        fullname2 = () => {
+            console.log(this.fName, this.lName)
+        }
+    }
+    let std = new Student();
+    std.fullname1();
+    std.fullname2();
+
+    // let a = std.fullname1;
+    // a();
+
+    let b = std.fullname2;
+    b();
+
+    let c = b;
+    c();
+
+    let d = c;
+    d();
+</script>

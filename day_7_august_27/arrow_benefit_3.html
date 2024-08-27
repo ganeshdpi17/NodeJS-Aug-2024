@@ -1,0 +1,26 @@
+<script>
+    class Student {
+        fName = 'sachin';
+        lName = 'tendulkar';
+
+        displayInfo() {
+            // this = Student Obj
+            console.log('displayInfo::', this.fName, this.lName);
+            var that = this; // that = Student Obj
+
+            function fullName1() {
+                // this = not Student object
+                // console.log('fullName1 ::', this.fName, this.lName);
+                console.log('fullName1 ::', that.fName, that.lName);
+            }
+            let fullName2 = () => {
+                // this = Student Obj , it uses this value from lexical scope
+                console.log('fullName1 ::', this.fName, this.lName);
+            }
+            fullName1();
+            fullName2();
+        }
+    }
+    let std = new Student();
+    std.displayInfo();
+</script>

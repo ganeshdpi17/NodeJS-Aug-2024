@@ -44,7 +44,7 @@ Arrow Function Limitations
 
 Arrow Function Benefits
 =======================
--arrow function doesn't have its own 'this' binding, it uses 'this' from the (lexical scope/the place where arrow function ise declared)
+-arrow function doesn't have its own 'this' binding, it uses 'this' from the (lexical scope/the place where arrow function is declared)
 -'this' value is static , it doesn't check from where the function is invoked
   it checks where the function is written
 -when arrow functions are used as callbacks, they dont loose 'this' context

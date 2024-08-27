@@ -1,0 +1,18 @@
+https://www.jsv9000.app/
+
+
+Heap - Memory area where all the variables are stored
+
+Stack / CallStack - initially the Call Stack is empty. 
+When the first function call is made, a new frame is pushed onto the top of the Call Stack.
+When that function returns, its frame is popped off of the Call Stack
+
+Note: Only the regular functions can be placed in callstack directly, where as callbacks won't be placed in callstack directly
+
+callback functions have to wait in callback queue, and they will get a chance to execute only after all the regular functions are executed(callstack is free)
+
+Callback queue : is the area where all the callback functions keep waiting.
+Callback Queue : 1. Task Queue       (setTimeout , setInterval)
+                 2. Microtask queue  ( Promise)
+
+Event Loop : Keeps checking  CallStack & Callback queue , when event loop finds that callstack is empty/Free and callback queue has functions , it brings 1 function from callback queue and assigns to callstack for execution

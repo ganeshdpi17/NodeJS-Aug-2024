@@ -1,0 +1,18 @@
+<body>
+    <button>button-1</button>
+    <button>button-2</button>
+    <button>button-3</button>
+    <button>button-4</button>
+    <button>button-5</button>
+
+    <script>
+        let myButtons = document.querySelectorAll('button');
+        console.log(myButtons);
+        console.log(typeof myButtons);
+        console.log(Array.isArray(myButtons));
+
+        let myButtonsArr = Array.from(myButtons);
+        console.log(myButtonsArr)
+        console.log(Array.isArray(myButtonsArr));
+    </script>
+</body>

@@ -1,0 +1,50 @@
+Collections - Set , Map
+Symbol
+class , extends
+Modules
+
+
+Set
+===
+-Sets are ordered lists of values that contain no duplicates.
+let carSet = new Set();
+carSet.add('tata');
+carSet.add('honda');
+console.log(carSet.size);
+console.log(carSet.has('tata')); 
+carSet.delete('maruti'); 
+carSet.clear();
+
+Map
+===
+-Map Stores the data in Key:Value pair
+
+object vs map
+-------------
+1. object keys must be strings/symbol, where as map keys can be of any type.
+2. You can get the size of a Map easily.  ex: map.size
+   for object, size has to be calculated manually. ex: Object.keys(obj).length
+3.The iteration of maps is in insertion order of the elements
+4.Objects are not inherently iterable (Object.keys() is slow), Maps are iterable.
+
+
+Symbol Datatype
+===============
+-Symbols are used to create hidden properties inside objects.
+-in an object the key should be either string/Symbol type.  
+let Symbol1 = Symbol('id');
+user[Symbol1] = 111;
+-symbols are not iterated while we iterate object using for in
+
+
+
+Class 
+=====
+-A class is a Structure/BluePrint/Template for Objects
+-Class doesn't have physical existance
+-Class has logical existance
+
+Object
+======
+-Object is an instance of class
+-Object has physical existance

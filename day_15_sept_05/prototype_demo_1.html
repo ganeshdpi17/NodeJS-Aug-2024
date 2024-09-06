@@ -1,0 +1,23 @@
+<script>
+    class Student {
+        constructor(roll, name, course) {
+            this.roll = roll;
+            this.name = name;
+            this.course = course;
+            // this.clgName = 'nareshIT';
+            // this.clgAdd = 'Hyderabad';
+        }
+    }
+    Student.prototype.clgName = 'nareshIT';
+    Student.prototype.clgAdd = 'Hyderabad';
+
+    let std1 = new Student(101, 'Ramana', 'NodeJS')
+    let std2 = new Student(102, 'Ganesan', 'ReactJS')
+    console.log(std1)
+    console.log(std2)
+    console.log(std1.name, std1.course, std1.clgName, std1.clgAdd);
+
+    std1.clgName = 'nareshInfoTech'; // we arr adding a new property in std1
+    console.log(std1.name, std1.course, std1.clgName, std1.clgAdd);
+
+</script>

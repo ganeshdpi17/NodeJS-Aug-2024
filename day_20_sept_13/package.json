@@ -4,12 +4,21 @@
   "description": "",
   "main": "axios_demo_1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createFolder": "mkdir abc && cd abc && mkdir pqr && cd pqr && mkdir xyz"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "bootstrap": "^4.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.10.0",
+    "jasmine": "^5.3.0"
+  },
+  "optionalDependencies": {
+    "lodash": "^4.17.21"
   }
 }

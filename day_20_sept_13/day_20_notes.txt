@@ -26,6 +26,7 @@ NPM (Node Package Manager)
  npm install <package_name> -g
  
 -Save the package as dependency
+ npm install <package_name> (OR)
  npm install <package_name> --save
  
 -Save the package as dev-dependency
@@ -91,3 +92,27 @@ NPM Global vs Local Installation
 -Run the below command command to list down all the globally installed modules. 
  npm ls -g
 -If we want to use a module in shell/command-prompt not using require(), install that globally.
+
+
+
+Use case
+=========
+nodemon addition.js
+'nodemon' is not recognized as an internal or external command,operable program or batch file.
+Solution-1 : install nodemon and use
+            npm i -g nodemon
+            nodemon addition.js
+Solution-2 : use npx
+             npx nodemon addition.js
+
+
+create a react project
+======================
+create-react-app my-frist-react-application
+Error : 'create-react-app' is not recognized as an internal or external command,
+operable program or batch file.
+
+Solution-1 : npm i -g create-react-app
+             create-react-app my-frist-react-application
+
+solution-2 : npx create-react-app my-frist-react-application

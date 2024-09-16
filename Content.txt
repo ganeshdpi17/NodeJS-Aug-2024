@@ -18,9 +18,9 @@ Node.js Syllabus
 -Traditional Web Server Model, Node.js Process Model
 -Local Environment SetUp
 -Node.js Console - REPL
--NPM , NPX , NVM
--Modules: Core, Local , 3rd party
+-NPM , NPX , NVM , yarn
 -Global Objects
+-Modules: Core, Local , 3rd party
 -File System
 -Debugging Node JS Application
 -Buffer & Streams

@@ -1,0 +1,18 @@
+{
+  "name": "day_24_sept_18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "path_demo_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDev":"node --env-file=.dev.env process_demo_1.js",
+    "startQa":"node --env-file=.qa.env process_demo_1.js",
+    "startProd":"node --env-file=.prod.env process_demo_1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

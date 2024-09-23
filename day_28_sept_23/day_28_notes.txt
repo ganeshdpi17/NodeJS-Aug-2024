@@ -1,0 +1,10 @@
+Express Routers
+===============
+-Routing refers to how an application’s endpoints (URIs) respond to client requests.
+
+express.Router()
+================
+-express.Router() function is used to create a new router object.
+-To create a new router object in our program to handle requests.
+-Use the express.Router class to create modular, mountable route handlers.
+-router.use(timeLog) , adds a middleware for a router object

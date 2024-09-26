@@ -1,0 +1,17 @@
+{
+  "name": "day_30_sept_25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0",
+    "pino": "^9.4.0",
+    "pino-http": "^10.3.0"
+  }
+}

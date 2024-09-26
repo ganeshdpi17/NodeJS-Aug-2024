@@ -1,0 +1,6 @@
+GET /employees 200 277 - 3.256 ms
+GET /employees 200 277 - 0.566 ms
+GET /employees 200 277 - 0.476 ms
+POST /employees 201 7 - 4.883 ms
+POST /employees 201 7 - 1.277 ms
+POST /employees 201 7 - 0.831 ms

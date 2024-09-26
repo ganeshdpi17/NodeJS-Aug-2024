@@ -1,0 +1,58 @@
+Body-parser
+===========
+-parse the body of requests which have payloads attached to them.
+-Parse incoming request bodies(formData) in a middleware before handlers are invoked.
+-extracts the body portion of an incoming request & exposes it on req.body.
+-parses the data submitted using HTTP POST request.
+ npm install body-parser --save
+ 
+ // parse application/x-www-form-urlencoded
+ app.use(bodyParser.urlencoded({ extended: false }))
+
+ // parse application/json
+ app.use(bodyParser.json())
+ 
+ 
+Note: ExpressJS provides its inbuilt functions for parsing request body
+	app.use(express.json()); 
+	app.use(express.urlencoded()); 
+
+
+Morgan 
+======
+-Morgan is a popular HTTP request logger middleware for Node.js.
+-Alternatives Packages to morgan are : Winston / Bunyan / Pino
+-It simplifies the process of logging HTTP requests in a Node.js application by automatically generating logs for incoming requests.
+-Morgan provides various logging formats and options, allowing developers to customize the logging output according to their requirements.
+-Logging formats : combined / common / short / tiny
+Ex: app.use(morgan('tiny'));
+app.use(morgan('combined'));
+app.use(morgan(':method :host :status :param[id] :res[content-length] - :response-time ms'));
+
+Custom token with argument:
+morgan.token('param', function(req, res, param) {
+    return req.params[param];
+});
+
+
+1. npm i morgan
+2. const morgan = require('morgan');
+   app.use(morgan('tiny'));
+
+
+
+Express generator
+=================
+1. npm install -g express-generator
+2. express project1 (--view=jade  default)
+   express --view=ejs project1
+   express project2 --no-view
+   
+cd project1
+npm install
+SET DEBUG=project1:* & npm start
+
+
+Folder Structure for NodeJS & ExpressJS project
+===============================================
+https://dev.to/mr_ali3n/folder-structure-for-nodejs-expressjs-project-435l

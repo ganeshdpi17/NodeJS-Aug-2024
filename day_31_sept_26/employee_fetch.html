@@ -1,0 +1,10 @@
+<body>
+    <script>
+        async function fetchEmployees() {
+            let response = await fetch(`http://localhost:5000/employees`)
+            let finalResponse = await response.json();
+            console.log(finalResponse);
+        }
+        fetchEmployees();
+    </script>
+</body>

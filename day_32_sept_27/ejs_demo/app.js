@@ -15,7 +15,8 @@ app.get('/careers', (req, res) => {
     res.render('pages/careers');
 })
 app.get('/products', (req, res) => {
-    res.render('pages/products', { products });
+    // res.render('pages/products', { products });
+    res.json(products)
 })
 
 app.listen(5000);

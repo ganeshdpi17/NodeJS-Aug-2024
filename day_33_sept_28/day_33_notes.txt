@@ -1,0 +1,58 @@
+MongoDB Local
+=============
+1. download and install (MongoDB Community Server)
+   https://www.mongodb.com/try/download/community 
+					(OR)
+   https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.5-signed.msi
+   
+   
+The Below Points are optional if we want to access our database in MongoDB Compass
+2. Go to the path where MongoDB is installed,and run 'mongod.exe'  
+   By default it is "C:\Program Files\MongoDB\Server\6.0\bin"
+4. Expect Error as the data directory is not set
+   "{"error":"NonExistentPath: Data directory C:\\data\\db\\ not found"
+5. create folder 'c:\data\db'
+6. run 'mongod.exe'
+7. set path for mongo-server(To start mongodb from any path)
+	C:\Program Files\MongoDB\Server\6.0\bin
+
+
+https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+
+
+
+MongoDB Shell (CLI for mongoDB)
+=============
+-download mongoDB shell 
+ https://www.mongodb.com/try/download/shell
+-extract and run mongosh.exe
+-set path for mongo-shell
+	 C:\mongo-shell\bin	    
+-verify the path setup is done correctly by running below 2 commands
+ mongod --version
+ mongosh --version 
+-Run the below command to Start Mongo Shell 
+ start mongosh.exe 
+-Enter mongoDB Connection String 
+ mongodb://localhost:27017
+ 
+ 
+Note: If mongoDB and mongoShell are installed & path is set
+-open 2 command prompts
+-run 'mongod' in 1st cmd
+-run 'mongosh' in 2nd cmd
+ 
+ 
+MongoDB Compass
+===============
+-MongoDB Compass is a graphical interface to interact with the MongoDB 
+-Manage MongoDB data without writing complex shell commands
+ 
+1. Download and install MongoDB Compass (It comes along with mongoDB)
+   https://www.mongodb.com/try/download/compass
+2. open mongoDB Compass GUI
+3. Enter mongoDB Connection String 
+   mongodb://localhost:27017  (OR) 
+   mongodb://127.0.0.1:27017   
+   mongodb://0.0.0.0:27017

@@ -1,6 +1,7 @@
 const { MongoClient } = require('mongodb');
 
 const db_URL = 'mongodb://localhost:27017';
+// const db_URL = 'atlas url';
 let db;
 
 module.exports = {

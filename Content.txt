@@ -23,13 +23,13 @@ Node.js Syllabus
 -Modules: Core, Local , 3rd party
 -File System
 -Debugging Node JS Application
--Buffer & Streams
+-Buffer & Streams 
 -Events (Event Loop,Event Emitter)
 -Creating web server & Handling http requests (HTTP)
 -Express Framework-routes
+-Template Engines (Jade/Pug, vash, EJS, handlebars)
 -NodeJS & MongoDB Connection
 -Mongoose,graphQL
--Template Engines (Jade/Pug, vash, EJS, handlebars)
 -Redis (Caching)
 -ESLint 
 -Swagger  (API Documentation)

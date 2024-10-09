@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const { gql } = require('apollo-server-express');
-const ProductModel = require('./models/productSchema')
+const connectToDB = require('./utils/db_Connect');
+const { getAllProducts, getProduct, addProduct } = require('./controllers/ProductController');
+
 
 exports.typeDefs = gql`
     type Product{
@@ -15,23 +17,42 @@ exports.typeDefs = gql`
         getProductList : [Product]
         getProduct(id:Int) : Product
     }
+    type Mutation{
+       addProduct(id: Int,
+            title: String,
+            price: Float,
+            description: String,
+            category: String,
+            image: String) : Product
+        updateProduct(id: Int,
+            title: String,
+            price: Float,
+            description: String,
+            category: String,
+            image: String):Product
+        deleteProduct(id:Int) : String
+    }
 `
-const db_url = 'mongodb://localhost:27017/sept_2024';
-const connect = async () => {
-    await mongoose.connect(db_url)
-}
+
 
 exports.resolvers = {
     Query: {
-        getProductList: async (parent, args) => {
-            await connect();
-            const allProducts = await ProductModel.find({});
-            return allProducts;
+        getProductList: getAllProducts,
+        getProduct: getProduct
+    },
+    Mutation: {
+        addProduct: addProduct,
+        updateProduct: async (parent, args) => {
+            await connectToDB();
+            let { id, title, price, category, image, description } = args;
+            let res = await ProductModel.findOneAndUpdate({ id }, { id, title, price, category, image, description });
+            return res;
         },
-        getProduct: async (parent, args) => {
-            await connect();
-            const res = await ProductModel.find({ id: args.id });
-            return res[0];
+        deleteProduct: async (parent, args) => {
+            await connectToDB();
+            let { id } = args;
+            await ProductModel.findOneAndDelete({ id })
+            return `Product ${id} deleted succesfully`
         }
     }
 }

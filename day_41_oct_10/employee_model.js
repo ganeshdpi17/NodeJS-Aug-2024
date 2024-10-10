@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const employeeSchema = new Schema({
-    _id: { type: Number, required: true },
-    eId: { type: Number, required: true },
+    _id: { type: Number},
+    eId: { type: Number},
     name: { type: String },
-    sal: { type: Number, required: trusted,min:0 },
+    sal: { type: Number},
     gender: { type: String }
 });
 

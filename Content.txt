@@ -46,7 +46,7 @@ Projects
 -GraphQL
 -Template Engine
 -Server Side Validation
--Image Upload (express-file-uploader)
+-Image Upload (express-fileupload)
 -Image Upload (Formidable) 
 -NodeEmailer (Send Email)
 -Chat Application (Socket.io)

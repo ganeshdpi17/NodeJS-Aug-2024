@@ -1,0 +1,17 @@
+{
+  "name": "day_42_oct_14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express-fileupload": "^1.5.1",
+    "formidable": "^3.5.1"
+  }
+}

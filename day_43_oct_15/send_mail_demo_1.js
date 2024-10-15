@@ -21,7 +21,8 @@ let mailOptions = {
             Hiiiiiiiiii
             Good Morning
         </pre>
-    `
+    `,
+    attachments: [{ fileName: 'profile.png', path: './profile.png' }]
 }
 
 transporter.sendMail(mailOptions, (err, info) => {

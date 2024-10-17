@@ -1,0 +1,19 @@
+{
+  "name": "day_45_oct_17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "employee_crud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.12.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

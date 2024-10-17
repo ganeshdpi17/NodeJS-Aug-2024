@@ -1,0 +1,47 @@
+ESLint
+======
+-ESLint is a static code analysis tool.
+-Used for identifying problematic patterns found in JavaScript code.
+-It makes the code more consistent, avoiding bugs.
+-Pre-defined Rules
+ https://eslint.org/docs/latest/rules/
+-To add custom rules, change eslintrc.js file as given below 
+ "rules": {
+         'semi': ['error', 'always'],
+         'quotes': ['error', 'single'],
+		 'no-var': 2   (0 = off, 1 = warn, 2 = error)
+		 'eqeqeq': 2
+		 'prefer-template' : 2
+    }
+
+1. npm i eslint -g
+2. npm init @eslint/config   
+         (OR) 
+   npx eslint --init
+3. eslint .   		(linting will be running for a folder)
+   eslint abc.js    (linting will be running for a file-abc.js)
+
+
+
+
+Swagger
+=======
+-It’s very important to write documentation for APIs so that whoever consumes those APIs understand them, implement them, and play around with them.
+-Swagger is a software tool used for designing, building, documenting, and using RESTful APIs.
+-create, update and share API definitions with consumers.
+
+
+-All the operations should be mentioned in the file swagger.json
+-We can have custom CSS for our swagger page.
+
+Steps:
+1. npm init -y
+2. npm install swagger-ui-express 
+3. add server.js and add Routes code
+4. add the file swagger.json to define the operations.
+   https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v2.0/json/petstore-simple.json
+5. add the file swagger.css to define custom css
+6. Node server.js and try 'http://localhost:5000/api-docs/'
+
+
+https://stackoverflow.com/questions/45518568/can-i-write-same-path-names-for-different-methods-in-rest-api

@@ -1,12 +1,24 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const cors = require('cors');
 app.use(express.json()); // middleware which enables to collect client data from request
-app.use(cors()); 
+app.use(cors());
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+const customCss = fs.readFileSync('./swagger.css', 'utf-8')
+
+let options = {
+    customCssUrl: 'swagger.css'
+};
+
+app.use('/api-docs',
+    swaggerUi.serve,
+    // swaggerUi.setup(swaggerDocument)
+    // swaggerUi.setup(swaggerDocument, options)
+    swaggerUi.setup(swaggerDocument, { customCss })
+);
 
 let employees = [
     { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
@@ -36,28 +48,6 @@ app.post('/employees', (req, res) => {
     // res.status(201).send('Employee Added Successfully!!!')
 });
 
-let user = { name: 'sanjay', age: 50, add: 'bangalore' };
-console.log(user);
-console.log(`my name is  ${user.name}`);
-
-let x;
-console.log(x);
-
-function checkEven(n) {
-    if (n % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(checkEven(4));
-
 app.listen(5000, () => {
     console.log('server running at 5000');
 });
-
-class ABC {
-
-}
-let obj = new ABC();
-console.log(obj);

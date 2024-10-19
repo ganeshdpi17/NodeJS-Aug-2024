@@ -61,3 +61,39 @@ fdescribe() - focused describe. If it exists, jasmine will run only fdescribe sp
 xdescribe() - disabled describe. It will never be executed.
 fit() - focused it()
 xit() - disabled it()
+
+
+Stub
+====
+-stub: A stub is a function/object that replaces the actual behavior of a module with a fixed response.
+ex: if you’re testing a function that writes a value to the database, you should write a stub that avoids the db interaction but returns a successful result.
+-we have to set the expectations beforehand to make sure that everything we wanted would be executed.
+
+function saveUser(usrData, dbConn) {  
+  let q = createQueryFromUser(usrData)
+  let result = dbConn.query(q)
+  return result;
+}
+
+makeStub(dbConn, 'query', () => {
+  return true;
+});
+
+it("should return TRUE when the query succeeds", () => {
+  let result = saveUser({
+    name: "Fernando",
+    password: "1234"
+  }, dbConn)
+  result.should.be.true
+})
+
+
+Spy
+===
+-spies are stubs that gather execution information, so they can tell you, in the end, what got called, when and with which parameters.
+-Spies and stubs are two types of test doubles, which are objects or functions that mimic the behavior or state of the real objects/function. 
+-A spy is a function that records how it was called, such as the arguments, the return value, and the context. 
+-A stub is a function that replaces the real one and returns a predefined value or performs a predefined action. 
+
+spyOn(someObj, 'func').and.returnValue(42);
+spyOn(someObj, 'func').withArgs(2, 3).and.returnValue(5);

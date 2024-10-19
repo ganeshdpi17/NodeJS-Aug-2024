@@ -12,9 +12,15 @@ function addNewCar(newCar) {
     cars.push(newCar);
 }
 
+findMax = (a, b, c) => {
+    const max = Math.max(a, b, c);
+    return max;
+}
+
 module.exports = {
     add,
     isEven,
     addNewCar,
-    cars
+    cars,
+    findMax
 }

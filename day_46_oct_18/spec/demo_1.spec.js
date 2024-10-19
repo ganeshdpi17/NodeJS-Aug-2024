@@ -1,4 +1,4 @@
-const { add, isEven, cars, addNewCar } = require("../demo_1")
+const { add, isEven, cars, addNewCar, findMax } = require("../demo_1")
 
 describe('I am Testing demo_1 file', () => {
     it('should test add function', () => {
@@ -24,7 +24,14 @@ describe('I am Testing demo_1 file', () => {
         expect(cars).toContain('Tata');
         expect(cars).toContain('Maruti');
         expect(cars).not.toContain('BMW');
-        expect(cars).toEqual(['Tata','Honda','Maruti']);
+        expect(cars).toEqual(['Tata', 'Honda', 'Maruti']);
     });
+    it('It from demo-1', () => {
+        console.log('It from demo-1')
+    })
+    it('It should test getEmployees', () => {
+        spyOn(Math,'max').and.returnValue(100);
+        expect(findMax(10, 50, 20)).toBe(100);
+    })
 
 })

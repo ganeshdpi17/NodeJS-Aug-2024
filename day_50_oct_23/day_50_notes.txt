@@ -1,0 +1,6 @@
+PhonePe Integration
+====================
+https://developer.phonepe.com/v1/docs/api-integration/
+
+1. npm init -y
+2. npm i express axios cors 

@@ -1,0 +1,12 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 0CA4-CD14
+
+ Directory of C:\Users\SANJAY\OneDrive\Desktop\NareshIT\node_19_august_2024\day_54_oct_29
+
+29-10-2024  20:34    <DIR>          .
+29-10-2024  20:13    <DIR>          ..
+29-10-2024  20:20             1,199 day_54_notes.txt
+29-10-2024  20:30               324 exec_demo_1.js
+29-10-2024  20:39               491 exec_demo_2.js
+               3 File(s)          2,014 bytes
+               2 Dir(s)  117,387,051,008 bytes free
